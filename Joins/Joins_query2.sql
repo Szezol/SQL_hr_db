@@ -1,0 +1,4 @@
+SELECT concat(FIRST_NAME, ', ',LAST_NAME) as EMPLOYEE_NAME, departments.DEPARTMENT_ID, DEPARTMENT_NAME
+FROM employees
+LEFT OUTER JOIN departments
+ON departments.DEPARTMENT_ID=employees.DEPARTMENT_ID;

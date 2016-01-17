@@ -1,0 +1,5 @@
+SELECT CONCAT(FIRST_NAME,', ',LAST_NAME) as EMPLOYEE_NAME,jobs.JOB_TITLE
+FROM employees
+LEFT OUTER JOIN jobs
+ON jobs.JOB_ID=employees.JOB_ID
+WHERE JOB_TITLE like '%Manager%';
